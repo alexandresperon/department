@@ -60,5 +60,5 @@ Para consultar o estado da API: [Health Check](http://localhost:8080/api/actuato
 
 O frontend é construído em Angular 11, em Typescript e utilizando Sass e Angular Materialize para a estilização das páginas.
 
-Consiste em apenas uma página, acessada direto do "/", com uma tela de consulta, sendo possível filtrar por qualquer campo disponível, exibindo o resultado em uma tabela ordenada e paginada.
+Consiste em uma página de login que, após autenticação, redireciona para a página principal, uma tela de consulta, sendo possível filtrar por qualquer campo disponível, exibindo o resultado em uma tabela ordenada e paginada.
 Cada registro tem a opções de edição e remoção e no alto do tela há o botão de inclusão de um novo departamento.
