@@ -7,7 +7,7 @@ Para rodar é necessário apenas ter o `docker` na máquina. Seguindo os passos:
 Entre no diretório do department-service e rode o comando para gerar o pacote da API:
 
 ```
-.\department-service\gradlew.bat build
+.\gradlew.bat build
 ```
 
 Após finalizar, volte para a raiz e execute o `docker-compose` para buildar os containers:
