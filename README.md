@@ -4,13 +4,13 @@ A aplicação consiste em um _CRUD_ de departamentos utilizando Angular, Spring 
 
 Para rodar é necessário apenas ter o `docker` na máquina. Seguindo os passos:
 
-Execute o comando para gerar o pacote da API:
+Entre no diretório do department-service e rode o comando para gerar o pacote da API:
 
 ```
 .\department-service\gradlew.bat build
 ```
 
-Após finalizar execute o `docker-compose` para buildar os containers:
+Após finalizar, volte para a raiz e execute o `docker-compose` para buildar os containers:
 
 ```
 docker-compose up
