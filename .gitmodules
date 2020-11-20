@@ -1,0 +1,6 @@
+[submodule "department-front"]
+	path = department-front
+	url = https://github.com/alexandresperon/department-front.git
+[submodule "department-service"]
+	path = department-service
+	url = https://github.com/alexandresperon/department-service.git

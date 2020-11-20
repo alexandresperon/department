@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  postgres-db:
+    container_name: postgres-db
+    image: postgres:13.1
+    environment:
+      POSTGRES_PASSWORD: "root"
+      POSTGRES_DB: department
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+  department-service:
+    container_name: department-service
+    build:
+      context: ./department-service
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    depends_on:
+      - postgres-db
+    links:
+      - postgres-db
+  department-front:
+    container_name: department-front
+    build:
+      context: ./department-front
+      dockerfile: Dockerfile
+    ports:
+      - 4200:4200
+    links:
+      - department-service
+
+volumes:
+    db-data:
+        driver: local
